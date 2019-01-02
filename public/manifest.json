@@ -1,0 +1,8 @@
+{
+  "name": "Tawfeeq Chat",
+  "short_name": "Tawfeeq Chat",
+  "start_url": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "gcm_sender_id": "103953800507"
+}

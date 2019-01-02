@@ -1,0 +1,104 @@
+
+
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400');
+:root {
+  background-image: radial-gradient(ellipse farthest-corner, transparent, #1a1a1a), repeating-linear-gradient(-30deg, transparent 0, transparent 1.25rem, rgba(0, 0, 0, 0.1) 1.25rem, rgba(0, 0, 0, 0.1) 1.5rem), repeating-linear-gradient(30deg, transparent 0, transparent 1.25rem, rgba(0, 0, 0, 0.1) 1.25rem, rgba(0, 0, 0, 0.1) 1.5rem);
+  min-height: 100vh;
+}
+.loader {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 15rem;
+  min-height: 30rem;
+  background-color: white;
+  border-radius: 0.5rem;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+  font: normal normal 9.33333pt Lato, sans-serif;
+}
+.loader__result {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  color: transparent;
+  background-color: #37c0c9;
+  border-radius: 50%;
+  transition: width 333ms ease-in, height 333ms ease-in, color 125ms ease-in, font-size 500ms cubic-bezier(0, 1.58, 0.18, 1) 125ms, border-radius 125ms ease-in;
+  font-size: 0;
+  text-shadow: 0 0.125em 0.25em rgba(0, 0, 0, 0.5);
+  transform: translate(-50%, -50%);
+}
+.loader__result--is-complete {
+  font-size: 1rem;
+  width: 141vmin;
+  height: 141vmin;
+  color: white;
+}
+.loader__icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 3em;
+  transform: translatey(-25%) translate(-50%, -50%);
+}
+.loader__message {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  font-size: 1.5em;
+  text-align: center;
+  transform: translatey(1rem);
+}
+.loader__decoration {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-radius: 50%;
+  width: 2rem;
+  height: 2rem;
+}
+.loader__decoration--a {
+  background-color: rgba(60, 175, 218, 0.15);
+  animation: ukjkfcugk 1s infinite ease-in-out;
+  animation-delay: -0.25s;
+}
+@keyframes ukjkfcugk {
+  from, to {
+    transform: translate(-50%, -50%) scale(2.5);
+  }
+  50% {
+    transform: translate(-50%, -50%) scale(1.5);
+  }
+}
+.loader__decoration--b {
+  background-color: rgba(60, 175, 218, 0.15);
+  animation: ukjkfcugp 1s infinite ease-in-out;
+  animation-delay: -0.333s;
+}
+@keyframes ukjkfcugp {
+  from, to {
+    transform: translate(-50%, -50%) scale(1.75);
+  }
+  50% {
+    transform: translate(-50%, -50%) scale(1.25);
+  }
+}
+.loader__decoration--c {
+  background-color: #3cafda;
+  animation: ukjkfcugu 1s infinite ease-in-out;
+}
+@keyframes ukjkfcugu {
+  from, to {
+    transform: translate(-50%, -50%) scale(1);
+  }
+  50% {
+    transform: translate(-50%, -50%) scale(0.75);
+  }
+}
